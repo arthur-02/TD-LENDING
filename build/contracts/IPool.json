@@ -1,0 +1,4069 @@
+{
+  "contractName": "IPool",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "referralCode",
+          "type": "uint16"
+        }
+      ],
+      "name": "supply",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "referralCode",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "permitV",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "permitR",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "permitS",
+          "type": "bytes32"
+        }
+      ],
+      "name": "supplyWithPermit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestRateMode",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint16",
+          "name": "referralCode",
+          "type": "uint16"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        }
+      ],
+      "name": "borrow",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestRateMode",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        }
+      ],
+      "name": "repay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestRateMode",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "permitV",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "permitR",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "permitS",
+          "type": "bytes32"
+        }
+      ],
+      "name": "repayWithPermit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "interestRateMode",
+          "type": "uint256"
+        }
+      ],
+      "name": "repayWithATokens",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "receiverAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "interestRateModes",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "address",
+          "name": "onBehalfOf",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint16",
+          "name": "referralCode",
+          "type": "uint16"
+        }
+      ],
+      "name": "flashLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "receiverAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint16",
+          "name": "referralCode",
+          "type": "uint16"
+        }
+      ],
+      "name": "flashLoanSimple",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"interestRateMode\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"referralCode\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"}],\"name\":\"borrow\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiverAddress\",\"type\":\"address\"},{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"interestRateModes\",\"type\":\"uint256[]\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"},{\"internalType\":\"uint16\",\"name\":\"referralCode\",\"type\":\"uint16\"}],\"name\":\"flashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiverAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"},{\"internalType\":\"uint16\",\"name\":\"referralCode\",\"type\":\"uint16\"}],\"name\":\"flashLoanSimple\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"interestRateMode\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"}],\"name\":\"repay\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"interestRateMode\",\"type\":\"uint256\"}],\"name\":\"repayWithATokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"interestRateMode\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"permitV\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"permitR\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"permitS\",\"type\":\"bytes32\"}],\"name\":\"repayWithPermit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"},{\"internalType\":\"uint16\",\"name\":\"referralCode\",\"type\":\"uint16\"}],\"name\":\"supply\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"onBehalfOf\",\"type\":\"address\"},{\"internalType\":\"uint16\",\"name\":\"referralCode\",\"type\":\"uint16\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"permitV\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"permitR\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"permitS\",\"type\":\"bytes32\"}],\"name\":\"supplyWithPermit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Aave\",\"methods\":{\"borrow(address,uint256,uint256,uint16,address)\":{\"params\":{\"amount\":\"The amount to be borrowed\",\"asset\":\"The address of the underlying asset to borrow\",\"interestRateMode\":\"The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable\",\"onBehalfOf\":\"The address of the user who will receive the debt. Should be the address of the borrower itself calling the function if he wants to borrow against his own collateral, or the address of the credit delegator if he has been given credit delegation allowance\",\"referralCode\":\"The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man\"}},\"flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)\":{\"details\":\"IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept into consideration. For further details please visit https://docs.aave.com/developers/\",\"params\":{\"amounts\":\"The amounts of the assets being flash-borrowed\",\"assets\":\"The addresses of the assets being flash-borrowed\",\"interestRateModes\":\"Types of the debt to open if the flash loan is not returned:  0 -> Don't open any debt, just revert if funds can't be transferred from the receiver  1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address  2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\",\"onBehalfOf\":\"The address  that will receive the debt in the case of using on `modes` 1 or 2\",\"params\":\"Variadic packed params to pass to the receiver as extra information\",\"receiverAddress\":\"The address of the contract receiving the funds, implementing IFlashLoanReceiver interface\",\"referralCode\":\"The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man\"}},\"flashLoanSimple(address,address,uint256,bytes,uint16)\":{\"details\":\"IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept into consideration. For further details please visit https://docs.aave.com/developers/\",\"params\":{\"amount\":\"The amount of the asset being flash-borrowed\",\"asset\":\"The address of the asset being flash-borrowed\",\"params\":\"Variadic packed params to pass to the receiver as extra information\",\"receiverAddress\":\"The address of the contract receiving the funds, implementing IFlashLoanSimpleReceiver interface\",\"referralCode\":\"The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man\"}},\"repay(address,uint256,uint256,address)\":{\"params\":{\"amount\":\"The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\",\"asset\":\"The address of the borrowed underlying asset previously borrowed\",\"interestRateMode\":\"The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\",\"onBehalfOf\":\"The address of the user who will get his debt reduced/removed. Should be the address of the user calling the function if he wants to reduce/remove his own debt, or the address of any other other borrower whose debt should be removed\"},\"returns\":{\"_0\":\"The final amount repaid\"}},\"repayWithATokens(address,uint256,uint256)\":{\"details\":\"Passing uint256.max as amount will clean up any residual aToken dust balance, if the user aToken balance is not enough to cover the whole debt\",\"params\":{\"amount\":\"The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\",\"asset\":\"The address of the borrowed underlying asset previously borrowed\",\"interestRateMode\":\"The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\"},\"returns\":{\"_0\":\"The final amount repaid\"}},\"repayWithPermit(address,uint256,uint256,address,uint256,uint8,bytes32,bytes32)\":{\"params\":{\"amount\":\"The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\",\"asset\":\"The address of the borrowed underlying asset previously borrowed\",\"deadline\":\"The deadline timestamp that the permit is valid\",\"interestRateMode\":\"The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\",\"onBehalfOf\":\"Address of the user who will get his debt reduced/removed. Should be the address of the user calling the function if he wants to reduce/remove his own debt, or the address of any other other borrower whose debt should be removed\",\"permitR\":\"The R parameter of ERC712 permit sig\",\"permitS\":\"The S parameter of ERC712 permit sig\",\"permitV\":\"The V parameter of ERC712 permit sig\"},\"returns\":{\"_0\":\"The final amount repaid\"}},\"supply(address,uint256,address,uint16)\":{\"params\":{\"amount\":\"The amount to be supplied\",\"asset\":\"The address of the underlying asset to supply\",\"onBehalfOf\":\"The address that will receive the aTokens, same as msg.sender if the user  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens  is a different wallet\",\"referralCode\":\"Code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man\"}},\"supplyWithPermit(address,uint256,address,uint16,uint256,uint8,bytes32,bytes32)\":{\"params\":{\"amount\":\"The amount to be supplied\",\"asset\":\"The address of the underlying asset to supply\",\"deadline\":\"The deadline timestamp that the permit is valid\",\"onBehalfOf\":\"The address that will receive the aTokens, same as msg.sender if the user  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens  is a different wallet\",\"permitR\":\"The R parameter of ERC712 permit sig\",\"permitS\":\"The S parameter of ERC712 permit sig\",\"permitV\":\"The V parameter of ERC712 permit sig\",\"referralCode\":\"Code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man\"}},\"withdraw(address,uint256,address)\":{\"params\":{\"amount\":\"The underlying amount to be withdrawn  - Send the value type(uint256).max in order to withdraw the whole aToken balance\",\"asset\":\"The address of the underlying asset to withdraw\",\"to\":\"The address that will receive the underlying, same as msg.sender if the user  wants to receive it on his own wallet, or a different address if the beneficiary is a  different wallet\"},\"returns\":{\"_0\":\"The final amount withdrawn\"}}},\"title\":\"IPool\"},\"userdoc\":{\"methods\":{\"borrow(address,uint256,uint256,uint16,address)\":{\"notice\":\"Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower already supplied enough collateral, or he was given enough allowance by a credit delegator on the corresponding debt token (StableDebtToken or VariableDebtToken) - E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet  and 100 stable/variable debt tokens, depending on the `interestRateMode`\"},\"flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)\":{\"notice\":\"Allows smartcontracts to access the liquidity of the pool within one transaction, as long as the amount taken plus a fee is returned.\"},\"flashLoanSimple(address,address,uint256,bytes,uint16)\":{\"notice\":\"Allows smartcontracts to access the liquidity of the pool within one transaction, as long as the amount taken plus a fee is returned.\"},\"repay(address,uint256,uint256,address)\":{\"notice\":\"Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned - E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address\"},\"repayWithATokens(address,uint256,uint256)\":{\"notice\":\"Repays a borrowed `amount` on a specific reserve using the reserve aTokens, burning the equivalent debt tokens - E.g. User repays 100 USDC using 100 aUSDC, burning 100 variable/stable debt tokens\"},\"repayWithPermit(address,uint256,uint256,address,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Repay with transfer approval of asset to be repaid done via permit function see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\"},\"supply(address,uint256,address,uint16)\":{\"notice\":\"Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens. - E.g. User supplies 100 USDC and gets in return 100 aUSDC\"},\"supplyWithPermit(address,uint256,address,uint16,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Supply with transfer approval of asset to be supplied done via permit function see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\"},\"withdraw(address,uint256,address)\":{\"notice\":\"Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned E.g. User has 100 aUSDC, calls withdraw() and receives 100 USDC, burning the 100 aUSDC\"}},\"notice\":\"Defines the basic interface for an Aave Pool.\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IPool.sol\":\"IPool\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IPool.sol\":{\"keccak256\":\"0x755e5bde4a6b988aaedefa7ddb9063e737b938378bf74986e908f1957c773c4b\",\"urls\":[\"bzz-raw://f658596d04bc0e55f6e6e944cc31738f9e8802e9960e25490647f5d85a94d9e6\",\"dweb:/ipfs/QmVywGbpNZBhFmxa99AuWbNgkFzwuHaKSht11NMrvV1osQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPL-3.0\r\npragma solidity ^0.6.0;\r\n\r\n/**\r\n * @title IPool\r\n * @author Aave\r\n * @notice Defines the basic interface for an Aave Pool.\r\n */\r\ninterface IPool {\r\n  /**\r\n   * @notice Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens.\r\n   * - E.g. User supplies 100 USDC and gets in return 100 aUSDC\r\n   * @param asset The address of the underlying asset to supply\r\n   * @param amount The amount to be supplied\r\n   * @param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\r\n   *   wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\r\n   *   is a different wallet\r\n   * @param referralCode Code used to register the integrator originating the operation, for potential rewards.\r\n   *   0 if the action is executed directly by the user, without any middle-man\r\n   */\r\n  function supply(\r\n    address asset,\r\n    uint256 amount,\r\n    address onBehalfOf,\r\n    uint16 referralCode\r\n  ) external;\r\n\r\n  /**\r\n   * @notice Supply with transfer approval of asset to be supplied done via permit function\r\n   * see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\r\n   * @param asset The address of the underlying asset to supply\r\n   * @param amount The amount to be supplied\r\n   * @param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\r\n   *   wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\r\n   *   is a different wallet\r\n   * @param deadline The deadline timestamp that the permit is valid\r\n   * @param referralCode Code used to register the integrator originating the operation, for potential rewards.\r\n   *   0 if the action is executed directly by the user, without any middle-man\r\n   * @param permitV The V parameter of ERC712 permit sig\r\n   * @param permitR The R parameter of ERC712 permit sig\r\n   * @param permitS The S parameter of ERC712 permit sig\r\n   */\r\n  function supplyWithPermit(\r\n    address asset,\r\n    uint256 amount,\r\n    address onBehalfOf,\r\n    uint16 referralCode,\r\n    uint256 deadline,\r\n    uint8 permitV,\r\n    bytes32 permitR,\r\n    bytes32 permitS\r\n  ) external;\r\n\r\n  /**\r\n   * @notice Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned\r\n   * E.g. User has 100 aUSDC, calls withdraw() and receives 100 USDC, burning the 100 aUSDC\r\n   * @param asset The address of the underlying asset to withdraw\r\n   * @param amount The underlying amount to be withdrawn\r\n   *   - Send the value type(uint256).max in order to withdraw the whole aToken balance\r\n   * @param to The address that will receive the underlying, same as msg.sender if the user\r\n   *   wants to receive it on his own wallet, or a different address if the beneficiary is a\r\n   *   different wallet\r\n   * @return The final amount withdrawn\r\n   */\r\n  function withdraw(\r\n    address asset,\r\n    uint256 amount,\r\n    address to\r\n  ) external returns (uint256);\r\n\r\n  /**\r\n   * @notice Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower\r\n   * already supplied enough collateral, or he was given enough allowance by a credit delegator on the\r\n   * corresponding debt token (StableDebtToken or VariableDebtToken)\r\n   * - E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet\r\n   *   and 100 stable/variable debt tokens, depending on the `interestRateMode`\r\n   * @param asset The address of the underlying asset to borrow\r\n   * @param amount The amount to be borrowed\r\n   * @param interestRateMode The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable\r\n   * @param referralCode The code used to register the integrator originating the operation, for potential rewards.\r\n   *   0 if the action is executed directly by the user, without any middle-man\r\n   * @param onBehalfOf The address of the user who will receive the debt. Should be the address of the borrower itself\r\n   * calling the function if he wants to borrow against his own collateral, or the address of the credit delegator\r\n   * if he has been given credit delegation allowance\r\n   */\r\n  function borrow(\r\n    address asset,\r\n    uint256 amount,\r\n    uint256 interestRateMode,\r\n    uint16 referralCode,\r\n    address onBehalfOf\r\n  ) external;\r\n\r\n  /**\r\n   * @notice Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned\r\n   * - E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address\r\n   * @param asset The address of the borrowed underlying asset previously borrowed\r\n   * @param amount The amount to repay\r\n   * - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\r\n   * @param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\r\n   * @param onBehalfOf The address of the user who will get his debt reduced/removed. Should be the address of the\r\n   * user calling the function if he wants to reduce/remove his own debt, or the address of any other\r\n   * other borrower whose debt should be removed\r\n   * @return The final amount repaid\r\n   */\r\n  function repay(\r\n    address asset,\r\n    uint256 amount,\r\n    uint256 interestRateMode,\r\n    address onBehalfOf\r\n  ) external returns (uint256);\r\n\r\n  /**\r\n   * @notice Repay with transfer approval of asset to be repaid done via permit function\r\n   * see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\r\n   * @param asset The address of the borrowed underlying asset previously borrowed\r\n   * @param amount The amount to repay\r\n   * - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\r\n   * @param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\r\n   * @param onBehalfOf Address of the user who will get his debt reduced/removed. Should be the address of the\r\n   * user calling the function if he wants to reduce/remove his own debt, or the address of any other\r\n   * other borrower whose debt should be removed\r\n   * @param deadline The deadline timestamp that the permit is valid\r\n   * @param permitV The V parameter of ERC712 permit sig\r\n   * @param permitR The R parameter of ERC712 permit sig\r\n   * @param permitS The S parameter of ERC712 permit sig\r\n   * @return The final amount repaid\r\n   */\r\n  function repayWithPermit(\r\n    address asset,\r\n    uint256 amount,\r\n    uint256 interestRateMode,\r\n    address onBehalfOf,\r\n    uint256 deadline,\r\n    uint8 permitV,\r\n    bytes32 permitR,\r\n    bytes32 permitS\r\n  ) external returns (uint256);\r\n\r\n  /**\r\n   * @notice Repays a borrowed `amount` on a specific reserve using the reserve aTokens, burning the\r\n   * equivalent debt tokens\r\n   * - E.g. User repays 100 USDC using 100 aUSDC, burning 100 variable/stable debt tokens\r\n   * @dev  Passing uint256.max as amount will clean up any residual aToken dust balance, if the user aToken\r\n   * balance is not enough to cover the whole debt\r\n   * @param asset The address of the borrowed underlying asset previously borrowed\r\n   * @param amount The amount to repay\r\n   * - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\r\n   * @param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\r\n   * @return The final amount repaid\r\n   */\r\n  function repayWithATokens(\r\n    address asset,\r\n    uint256 amount,\r\n    uint256 interestRateMode\r\n  ) external returns (uint256);\r\n\r\n  /**\r\n   * @notice Allows smartcontracts to access the liquidity of the pool within one transaction,\r\n   * as long as the amount taken plus a fee is returned.\r\n   * @dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\r\n   * into consideration. For further details please visit https://docs.aave.com/developers/\r\n   * @param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanReceiver interface\r\n   * @param assets The addresses of the assets being flash-borrowed\r\n   * @param amounts The amounts of the assets being flash-borrowed\r\n   * @param interestRateModes Types of the debt to open if the flash loan is not returned:\r\n   *   0 -> Don't open any debt, just revert if funds can't be transferred from the receiver\r\n   *   1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\r\n   *   2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\r\n   * @param onBehalfOf The address  that will receive the debt in the case of using on `modes` 1 or 2\r\n   * @param params Variadic packed params to pass to the receiver as extra information\r\n   * @param referralCode The code used to register the integrator originating the operation, for potential rewards.\r\n   *   0 if the action is executed directly by the user, without any middle-man\r\n   */\r\n  function flashLoan(\r\n    address receiverAddress,\r\n    address[] calldata assets,\r\n    uint256[] calldata amounts,\r\n    uint256[] calldata interestRateModes,\r\n    address onBehalfOf,\r\n    bytes calldata params,\r\n    uint16 referralCode\r\n  ) external;\r\n\r\n  /**\r\n   * @notice Allows smartcontracts to access the liquidity of the pool within one transaction,\r\n   * as long as the amount taken plus a fee is returned.\r\n   * @dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\r\n   * into consideration. For further details please visit https://docs.aave.com/developers/\r\n   * @param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanSimpleReceiver interface\r\n   * @param asset The address of the asset being flash-borrowed\r\n   * @param amount The amount of the asset being flash-borrowed\r\n   * @param params Variadic packed params to pass to the receiver as extra information\r\n   * @param referralCode The code used to register the integrator originating the operation, for potential rewards.\r\n   *   0 if the action is executed directly by the user, without any middle-man\r\n   */\r\n  function flashLoanSimple(\r\n    address receiverAddress,\r\n    address asset,\r\n    uint256 amount,\r\n    bytes calldata params,\r\n    uint16 referralCode\r\n  ) external;\r\n\r\n}\r\n",
+  "sourcePath": "C:\\Users\\aboul\\coding_projects\\lending-101\\contracts\\IPool.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IPool.sol",
+    "exportedSymbols": {
+      "IPool": [
+        2086
+      ]
+    },
+    "id": 2087,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1953,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "38:23:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@title IPool\n@author Aave\n@notice Defines the basic interface for an Aave Pool.",
+        "fullyImplemented": false,
+        "id": 2086,
+        "linearizedBaseContracts": [
+          2086
+        ],
+        "name": "IPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens.\n- E.g. User supplies 100 USDC and gets in return 100 aUSDC\n@param asset The address of the underlying asset to supply\n@param amount The amount to be supplied\n@param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\n  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\n  is a different wallet\n@param referralCode Code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+            "functionSelector": "617ba037",
+            "id": 1964,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supply",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1962,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1955,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1964,
+                  "src": "936:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1954,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "936:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1957,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1964,
+                  "src": "956:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1956,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "956:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1959,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1964,
+                  "src": "977:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1958,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "977:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1961,
+                  "name": "referralCode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1964,
+                  "src": "1002:19:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1960,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1002:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "929:97:8"
+            },
+            "returnParameters": {
+              "id": 1963,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1035:0:8"
+            },
+            "scope": 2086,
+            "src": "914:122:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Supply with transfer approval of asset to be supplied done via permit function\nsee: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\n@param asset The address of the underlying asset to supply\n@param amount The amount to be supplied\n@param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\n  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\n  is a different wallet\n@param deadline The deadline timestamp that the permit is valid\n@param referralCode Code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man\n@param permitV The V parameter of ERC712 permit sig\n@param permitR The R parameter of ERC712 permit sig\n@param permitS The S parameter of ERC712 permit sig",
+            "functionSelector": "02c205f0",
+            "id": 1983,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supplyWithPermit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1981,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1966,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2054:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1965,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2054:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1968,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2074:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1967,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2074:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1970,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2095:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1969,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2095:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1972,
+                  "name": "referralCode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2120:19:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1971,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2120:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1974,
+                  "name": "deadline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2146:16:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1973,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2146:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1976,
+                  "name": "permitV",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2169:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 1975,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2169:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1978,
+                  "name": "permitR",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2189:15:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1977,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2189:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1980,
+                  "name": "permitS",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1983,
+                  "src": "2211:15:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1979,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2211:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2047:184:8"
+            },
+            "returnParameters": {
+              "id": 1982,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2240:0:8"
+            },
+            "scope": 2086,
+            "src": "2022:219:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned\nE.g. User has 100 aUSDC, calls withdraw() and receives 100 USDC, burning the 100 aUSDC\n@param asset The address of the underlying asset to withdraw\n@param amount The underlying amount to be withdrawn\n  - Send the value type(uint256).max in order to withdraw the whole aToken balance\n@param to The address that will receive the underlying, same as msg.sender if the user\n  wants to receive it on his own wallet, or a different address if the beneficiary is a\n  different wallet\n@return The final amount withdrawn",
+            "functionSelector": "69328dec",
+            "id": 1994,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1990,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1985,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1994,
+                  "src": "2956:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1984,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2956:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1987,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1994,
+                  "src": "2976:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1986,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2976:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1989,
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1994,
+                  "src": "2997:10:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1988,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2997:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2949:63:8"
+            },
+            "returnParameters": {
+              "id": 1993,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1992,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1994,
+                  "src": "3031:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1991,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3031:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3030:9:8"
+            },
+            "scope": 2086,
+            "src": "2932:108:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower\nalready supplied enough collateral, or he was given enough allowance by a credit delegator on the\ncorresponding debt token (StableDebtToken or VariableDebtToken)\n- E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet\n  and 100 stable/variable debt tokens, depending on the `interestRateMode`\n@param asset The address of the underlying asset to borrow\n@param amount The amount to be borrowed\n@param interestRateMode The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man\n@param onBehalfOf The address of the user who will receive the debt. Should be the address of the borrower itself\ncalling the function if he wants to borrow against his own collateral, or the address of the credit delegator\nif he has been given credit delegation allowance",
+            "functionSelector": "a415bcad",
+            "id": 2007,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "borrow",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2005,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1996,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2007,
+                  "src": "4284:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1995,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4284:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1998,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2007,
+                  "src": "4304:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1997,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4304:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2000,
+                  "name": "interestRateMode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2007,
+                  "src": "4325:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1999,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4325:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2002,
+                  "name": "referralCode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2007,
+                  "src": "4356:19:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2001,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4356:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2004,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2007,
+                  "src": "4382:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2003,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4382:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4277:128:8"
+            },
+            "returnParameters": {
+              "id": 2006,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4414:0:8"
+            },
+            "scope": 2086,
+            "src": "4262:153:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned\n- E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@param onBehalfOf The address of the user who will get his debt reduced/removed. Should be the address of the\nuser calling the function if he wants to reduce/remove his own debt, or the address of any other\nother borrower whose debt should be removed\n@return The final amount repaid",
+            "functionSelector": "573ade81",
+            "id": 2020,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "repay",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2016,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2009,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2020,
+                  "src": "5330:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2008,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5330:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2011,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2020,
+                  "src": "5350:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2010,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5350:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2013,
+                  "name": "interestRateMode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2020,
+                  "src": "5371:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2012,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5371:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2015,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2020,
+                  "src": "5402:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2014,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5402:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5323:102:8"
+            },
+            "returnParameters": {
+              "id": 2019,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2018,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2020,
+                  "src": "5444:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2017,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5444:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5443:9:8"
+            },
+            "scope": 2086,
+            "src": "5309:144:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Repay with transfer approval of asset to be repaid done via permit function\nsee: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@param onBehalfOf Address of the user who will get his debt reduced/removed. Should be the address of the\nuser calling the function if he wants to reduce/remove his own debt, or the address of any other\nother borrower whose debt should be removed\n@param deadline The deadline timestamp that the permit is valid\n@param permitV The V parameter of ERC712 permit sig\n@param permitR The R parameter of ERC712 permit sig\n@param permitS The S parameter of ERC712 permit sig\n@return The final amount repaid",
+            "functionSelector": "ee3e210b",
+            "id": 2041,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "repayWithPermit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2037,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2022,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6594:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2021,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6594:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2024,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6614:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2023,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6614:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2026,
+                  "name": "interestRateMode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6635:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2025,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6635:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2028,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6666:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2027,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6666:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2030,
+                  "name": "deadline",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6691:16:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2029,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6691:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2032,
+                  "name": "permitV",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6714:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 2031,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6714:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2034,
+                  "name": "permitR",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6734:15:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2033,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6734:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2036,
+                  "name": "permitS",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6756:15:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2035,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6756:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6587:189:8"
+            },
+            "returnParameters": {
+              "id": 2040,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2039,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2041,
+                  "src": "6795:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2038,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6795:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6794:9:8"
+            },
+            "scope": 2086,
+            "src": "6563:241:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Repays a borrowed `amount` on a specific reserve using the reserve aTokens, burning the\nequivalent debt tokens\n- E.g. User repays 100 USDC using 100 aUSDC, burning 100 variable/stable debt tokens\n@dev  Passing uint256.max as amount will clean up any residual aToken dust balance, if the user aToken\nbalance is not enough to cover the whole debt\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@return The final amount repaid",
+            "functionSelector": "2dad97d4",
+            "id": 2052,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "repayWithATokens",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2048,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2043,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2052,
+                  "src": "7636:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2042,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7636:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2045,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2052,
+                  "src": "7656:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2044,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7656:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2047,
+                  "name": "interestRateMode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2052,
+                  "src": "7677:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2046,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7677:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7629:77:8"
+            },
+            "returnParameters": {
+              "id": 2051,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2050,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2052,
+                  "src": "7725:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2049,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7725:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7724:9:8"
+            },
+            "scope": 2086,
+            "src": "7604:130:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Allows smartcontracts to access the liquidity of the pool within one transaction,\nas long as the amount taken plus a fee is returned.\n@dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\ninto consideration. For further details please visit https://docs.aave.com/developers/\n@param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanReceiver interface\n@param assets The addresses of the assets being flash-borrowed\n@param amounts The amounts of the assets being flash-borrowed\n@param interestRateModes Types of the debt to open if the flash loan is not returned:\n  0 -> Don't open any debt, just revert if funds can't be transferred from the receiver\n  1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\n  2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\n@param onBehalfOf The address  that will receive the debt in the case of using on `modes` 1 or 2\n@param params Variadic packed params to pass to the receiver as extra information\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+            "functionSelector": "ab9c4b5d",
+            "id": 2072,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flashLoan",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2070,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2054,
+                  "name": "receiverAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9192:23:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2053,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9192:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2057,
+                  "name": "assets",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9222:25:8",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2055,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "9222:7:8",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 2056,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "9222:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2060,
+                  "name": "amounts",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9254:26:8",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2058,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "9254:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2059,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "9254:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2063,
+                  "name": "interestRateModes",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9287:36:8",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2061,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "9287:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2062,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "9287:9:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2065,
+                  "name": "onBehalfOf",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9330:18:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2064,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9330:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2067,
+                  "name": "params",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9355:21:8",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2066,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9355:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2069,
+                  "name": "referralCode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2072,
+                  "src": "9383:19:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2068,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9383:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "9185:222:8"
+            },
+            "returnParameters": {
+              "id": 2071,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9416:0:8"
+            },
+            "scope": 2086,
+            "src": "9167:250:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Allows smartcontracts to access the liquidity of the pool within one transaction,\nas long as the amount taken plus a fee is returned.\n@dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\ninto consideration. For further details please visit https://docs.aave.com/developers/\n@param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanSimpleReceiver interface\n@param asset The address of the asset being flash-borrowed\n@param amount The amount of the asset being flash-borrowed\n@param params Variadic packed params to pass to the receiver as extra information\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+            "functionSelector": "42b0b77c",
+            "id": 2085,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flashLoanSimple",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2074,
+                  "name": "receiverAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2085,
+                  "src": "10371:23:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2073,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10371:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2076,
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2085,
+                  "src": "10401:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2075,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10401:7:8",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2078,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2085,
+                  "src": "10421:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2077,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10421:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2080,
+                  "name": "params",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2085,
+                  "src": "10442:21:8",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2079,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10442:5:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2082,
+                  "name": "referralCode",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2085,
+                  "src": "10470:19:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 2081,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "10470:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "10364:130:8"
+            },
+            "returnParameters": {
+              "id": 2084,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "10503:0:8"
+            },
+            "scope": 2086,
+            "src": "10340:164:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2087,
+        "src": "167:10342:8"
+      }
+    ],
+    "src": "38:10473:8"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IPool.sol",
+      "exportedSymbols": {
+        "IPool": [
+          2086
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 1953,
+        "name": "PragmaDirective",
+        "src": "38:23:8"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": "@title IPool\n@author Aave\n@notice Defines the basic interface for an Aave Pool.",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2086
+          ],
+          "name": "IPool",
+          "scope": 2087
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens.\n- E.g. User supplies 100 USDC and gets in return 100 aUSDC\n@param asset The address of the underlying asset to supply\n@param amount The amount to be supplied\n@param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\n  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\n  is a different wallet\n@param referralCode Code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+              "functionSelector": "617ba037",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "supply",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 1964,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1954,
+                        "name": "ElementaryTypeName",
+                        "src": "936:7:8"
+                      }
+                    ],
+                    "id": 1955,
+                    "name": "VariableDeclaration",
+                    "src": "936:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 1964,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1956,
+                        "name": "ElementaryTypeName",
+                        "src": "956:7:8"
+                      }
+                    ],
+                    "id": 1957,
+                    "name": "VariableDeclaration",
+                    "src": "956:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 1964,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1958,
+                        "name": "ElementaryTypeName",
+                        "src": "977:7:8"
+                      }
+                    ],
+                    "id": 1959,
+                    "name": "VariableDeclaration",
+                    "src": "977:18:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "referralCode",
+                      "overrides": null,
+                      "scope": 1964,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 1960,
+                        "name": "ElementaryTypeName",
+                        "src": "1002:6:8"
+                      }
+                    ],
+                    "id": 1961,
+                    "name": "VariableDeclaration",
+                    "src": "1002:19:8"
+                  }
+                ],
+                "id": 1962,
+                "name": "ParameterList",
+                "src": "929:97:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1963,
+                "name": "ParameterList",
+                "src": "1035:0:8"
+              }
+            ],
+            "id": 1964,
+            "name": "FunctionDefinition",
+            "src": "914:122:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Supply with transfer approval of asset to be supplied done via permit function\nsee: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\n@param asset The address of the underlying asset to supply\n@param amount The amount to be supplied\n@param onBehalfOf The address that will receive the aTokens, same as msg.sender if the user\n  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens\n  is a different wallet\n@param deadline The deadline timestamp that the permit is valid\n@param referralCode Code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man\n@param permitV The V parameter of ERC712 permit sig\n@param permitR The R parameter of ERC712 permit sig\n@param permitS The S parameter of ERC712 permit sig",
+              "functionSelector": "02c205f0",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "supplyWithPermit",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1965,
+                        "name": "ElementaryTypeName",
+                        "src": "2054:7:8"
+                      }
+                    ],
+                    "id": 1966,
+                    "name": "VariableDeclaration",
+                    "src": "2054:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1967,
+                        "name": "ElementaryTypeName",
+                        "src": "2074:7:8"
+                      }
+                    ],
+                    "id": 1968,
+                    "name": "VariableDeclaration",
+                    "src": "2074:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1969,
+                        "name": "ElementaryTypeName",
+                        "src": "2095:7:8"
+                      }
+                    ],
+                    "id": 1970,
+                    "name": "VariableDeclaration",
+                    "src": "2095:18:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "referralCode",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 1971,
+                        "name": "ElementaryTypeName",
+                        "src": "2120:6:8"
+                      }
+                    ],
+                    "id": 1972,
+                    "name": "VariableDeclaration",
+                    "src": "2120:19:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "deadline",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1973,
+                        "name": "ElementaryTypeName",
+                        "src": "2146:7:8"
+                      }
+                    ],
+                    "id": 1974,
+                    "name": "VariableDeclaration",
+                    "src": "2146:16:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitV",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 1975,
+                        "name": "ElementaryTypeName",
+                        "src": "2169:5:8"
+                      }
+                    ],
+                    "id": 1976,
+                    "name": "VariableDeclaration",
+                    "src": "2169:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitR",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1977,
+                        "name": "ElementaryTypeName",
+                        "src": "2189:7:8"
+                      }
+                    ],
+                    "id": 1978,
+                    "name": "VariableDeclaration",
+                    "src": "2189:15:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitS",
+                      "overrides": null,
+                      "scope": 1983,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 1979,
+                        "name": "ElementaryTypeName",
+                        "src": "2211:7:8"
+                      }
+                    ],
+                    "id": 1980,
+                    "name": "VariableDeclaration",
+                    "src": "2211:15:8"
+                  }
+                ],
+                "id": 1981,
+                "name": "ParameterList",
+                "src": "2047:184:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1982,
+                "name": "ParameterList",
+                "src": "2240:0:8"
+              }
+            ],
+            "id": 1983,
+            "name": "FunctionDefinition",
+            "src": "2022:219:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned\nE.g. User has 100 aUSDC, calls withdraw() and receives 100 USDC, burning the 100 aUSDC\n@param asset The address of the underlying asset to withdraw\n@param amount The underlying amount to be withdrawn\n  - Send the value type(uint256).max in order to withdraw the whole aToken balance\n@param to The address that will receive the underlying, same as msg.sender if the user\n  wants to receive it on his own wallet, or a different address if the beneficiary is a\n  different wallet\n@return The final amount withdrawn",
+              "functionSelector": "69328dec",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdraw",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 1994,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1984,
+                        "name": "ElementaryTypeName",
+                        "src": "2956:7:8"
+                      }
+                    ],
+                    "id": 1985,
+                    "name": "VariableDeclaration",
+                    "src": "2956:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 1994,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1986,
+                        "name": "ElementaryTypeName",
+                        "src": "2976:7:8"
+                      }
+                    ],
+                    "id": 1987,
+                    "name": "VariableDeclaration",
+                    "src": "2976:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "to",
+                      "overrides": null,
+                      "scope": 1994,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1988,
+                        "name": "ElementaryTypeName",
+                        "src": "2997:7:8"
+                      }
+                    ],
+                    "id": 1989,
+                    "name": "VariableDeclaration",
+                    "src": "2997:10:8"
+                  }
+                ],
+                "id": 1990,
+                "name": "ParameterList",
+                "src": "2949:63:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 1994,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1991,
+                        "name": "ElementaryTypeName",
+                        "src": "3031:7:8"
+                      }
+                    ],
+                    "id": 1992,
+                    "name": "VariableDeclaration",
+                    "src": "3031:7:8"
+                  }
+                ],
+                "id": 1993,
+                "name": "ParameterList",
+                "src": "3030:9:8"
+              }
+            ],
+            "id": 1994,
+            "name": "FunctionDefinition",
+            "src": "2932:108:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower\nalready supplied enough collateral, or he was given enough allowance by a credit delegator on the\ncorresponding debt token (StableDebtToken or VariableDebtToken)\n- E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet\n  and 100 stable/variable debt tokens, depending on the `interestRateMode`\n@param asset The address of the underlying asset to borrow\n@param amount The amount to be borrowed\n@param interestRateMode The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man\n@param onBehalfOf The address of the user who will receive the debt. Should be the address of the borrower itself\ncalling the function if he wants to borrow against his own collateral, or the address of the credit delegator\nif he has been given credit delegation allowance",
+              "functionSelector": "a415bcad",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "borrow",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 2007,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1995,
+                        "name": "ElementaryTypeName",
+                        "src": "4284:7:8"
+                      }
+                    ],
+                    "id": 1996,
+                    "name": "VariableDeclaration",
+                    "src": "4284:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2007,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1997,
+                        "name": "ElementaryTypeName",
+                        "src": "4304:7:8"
+                      }
+                    ],
+                    "id": 1998,
+                    "name": "VariableDeclaration",
+                    "src": "4304:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "interestRateMode",
+                      "overrides": null,
+                      "scope": 2007,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1999,
+                        "name": "ElementaryTypeName",
+                        "src": "4325:7:8"
+                      }
+                    ],
+                    "id": 2000,
+                    "name": "VariableDeclaration",
+                    "src": "4325:24:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "referralCode",
+                      "overrides": null,
+                      "scope": 2007,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 2001,
+                        "name": "ElementaryTypeName",
+                        "src": "4356:6:8"
+                      }
+                    ],
+                    "id": 2002,
+                    "name": "VariableDeclaration",
+                    "src": "4356:19:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 2007,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2003,
+                        "name": "ElementaryTypeName",
+                        "src": "4382:7:8"
+                      }
+                    ],
+                    "id": 2004,
+                    "name": "VariableDeclaration",
+                    "src": "4382:18:8"
+                  }
+                ],
+                "id": 2005,
+                "name": "ParameterList",
+                "src": "4277:128:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2006,
+                "name": "ParameterList",
+                "src": "4414:0:8"
+              }
+            ],
+            "id": 2007,
+            "name": "FunctionDefinition",
+            "src": "4262:153:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned\n- E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@param onBehalfOf The address of the user who will get his debt reduced/removed. Should be the address of the\nuser calling the function if he wants to reduce/remove his own debt, or the address of any other\nother borrower whose debt should be removed\n@return The final amount repaid",
+              "functionSelector": "573ade81",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "repay",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 2020,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2008,
+                        "name": "ElementaryTypeName",
+                        "src": "5330:7:8"
+                      }
+                    ],
+                    "id": 2009,
+                    "name": "VariableDeclaration",
+                    "src": "5330:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2020,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2010,
+                        "name": "ElementaryTypeName",
+                        "src": "5350:7:8"
+                      }
+                    ],
+                    "id": 2011,
+                    "name": "VariableDeclaration",
+                    "src": "5350:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "interestRateMode",
+                      "overrides": null,
+                      "scope": 2020,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2012,
+                        "name": "ElementaryTypeName",
+                        "src": "5371:7:8"
+                      }
+                    ],
+                    "id": 2013,
+                    "name": "VariableDeclaration",
+                    "src": "5371:24:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 2020,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2014,
+                        "name": "ElementaryTypeName",
+                        "src": "5402:7:8"
+                      }
+                    ],
+                    "id": 2015,
+                    "name": "VariableDeclaration",
+                    "src": "5402:18:8"
+                  }
+                ],
+                "id": 2016,
+                "name": "ParameterList",
+                "src": "5323:102:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2020,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2017,
+                        "name": "ElementaryTypeName",
+                        "src": "5444:7:8"
+                      }
+                    ],
+                    "id": 2018,
+                    "name": "VariableDeclaration",
+                    "src": "5444:7:8"
+                  }
+                ],
+                "id": 2019,
+                "name": "ParameterList",
+                "src": "5443:9:8"
+              }
+            ],
+            "id": 2020,
+            "name": "FunctionDefinition",
+            "src": "5309:144:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Repay with transfer approval of asset to be repaid done via permit function\nsee: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@param onBehalfOf Address of the user who will get his debt reduced/removed. Should be the address of the\nuser calling the function if he wants to reduce/remove his own debt, or the address of any other\nother borrower whose debt should be removed\n@param deadline The deadline timestamp that the permit is valid\n@param permitV The V parameter of ERC712 permit sig\n@param permitR The R parameter of ERC712 permit sig\n@param permitS The S parameter of ERC712 permit sig\n@return The final amount repaid",
+              "functionSelector": "ee3e210b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "repayWithPermit",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2021,
+                        "name": "ElementaryTypeName",
+                        "src": "6594:7:8"
+                      }
+                    ],
+                    "id": 2022,
+                    "name": "VariableDeclaration",
+                    "src": "6594:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2023,
+                        "name": "ElementaryTypeName",
+                        "src": "6614:7:8"
+                      }
+                    ],
+                    "id": 2024,
+                    "name": "VariableDeclaration",
+                    "src": "6614:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "interestRateMode",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2025,
+                        "name": "ElementaryTypeName",
+                        "src": "6635:7:8"
+                      }
+                    ],
+                    "id": 2026,
+                    "name": "VariableDeclaration",
+                    "src": "6635:24:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2027,
+                        "name": "ElementaryTypeName",
+                        "src": "6666:7:8"
+                      }
+                    ],
+                    "id": 2028,
+                    "name": "VariableDeclaration",
+                    "src": "6666:18:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "deadline",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2029,
+                        "name": "ElementaryTypeName",
+                        "src": "6691:7:8"
+                      }
+                    ],
+                    "id": 2030,
+                    "name": "VariableDeclaration",
+                    "src": "6691:16:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitV",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 2031,
+                        "name": "ElementaryTypeName",
+                        "src": "6714:5:8"
+                      }
+                    ],
+                    "id": 2032,
+                    "name": "VariableDeclaration",
+                    "src": "6714:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitR",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2033,
+                        "name": "ElementaryTypeName",
+                        "src": "6734:7:8"
+                      }
+                    ],
+                    "id": 2034,
+                    "name": "VariableDeclaration",
+                    "src": "6734:15:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "permitS",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2035,
+                        "name": "ElementaryTypeName",
+                        "src": "6756:7:8"
+                      }
+                    ],
+                    "id": 2036,
+                    "name": "VariableDeclaration",
+                    "src": "6756:15:8"
+                  }
+                ],
+                "id": 2037,
+                "name": "ParameterList",
+                "src": "6587:189:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2041,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2038,
+                        "name": "ElementaryTypeName",
+                        "src": "6795:7:8"
+                      }
+                    ],
+                    "id": 2039,
+                    "name": "VariableDeclaration",
+                    "src": "6795:7:8"
+                  }
+                ],
+                "id": 2040,
+                "name": "ParameterList",
+                "src": "6794:9:8"
+              }
+            ],
+            "id": 2041,
+            "name": "FunctionDefinition",
+            "src": "6563:241:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Repays a borrowed `amount` on a specific reserve using the reserve aTokens, burning the\nequivalent debt tokens\n- E.g. User repays 100 USDC using 100 aUSDC, burning 100 variable/stable debt tokens\n@dev  Passing uint256.max as amount will clean up any residual aToken dust balance, if the user aToken\nbalance is not enough to cover the whole debt\n@param asset The address of the borrowed underlying asset previously borrowed\n@param amount The amount to repay\n- Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`\n@param interestRateMode The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable\n@return The final amount repaid",
+              "functionSelector": "2dad97d4",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "repayWithATokens",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 2052,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2042,
+                        "name": "ElementaryTypeName",
+                        "src": "7636:7:8"
+                      }
+                    ],
+                    "id": 2043,
+                    "name": "VariableDeclaration",
+                    "src": "7636:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2052,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2044,
+                        "name": "ElementaryTypeName",
+                        "src": "7656:7:8"
+                      }
+                    ],
+                    "id": 2045,
+                    "name": "VariableDeclaration",
+                    "src": "7656:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "interestRateMode",
+                      "overrides": null,
+                      "scope": 2052,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2046,
+                        "name": "ElementaryTypeName",
+                        "src": "7677:7:8"
+                      }
+                    ],
+                    "id": 2047,
+                    "name": "VariableDeclaration",
+                    "src": "7677:24:8"
+                  }
+                ],
+                "id": 2048,
+                "name": "ParameterList",
+                "src": "7629:77:8"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2052,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2049,
+                        "name": "ElementaryTypeName",
+                        "src": "7725:7:8"
+                      }
+                    ],
+                    "id": 2050,
+                    "name": "VariableDeclaration",
+                    "src": "7725:7:8"
+                  }
+                ],
+                "id": 2051,
+                "name": "ParameterList",
+                "src": "7724:9:8"
+              }
+            ],
+            "id": 2052,
+            "name": "FunctionDefinition",
+            "src": "7604:130:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Allows smartcontracts to access the liquidity of the pool within one transaction,\nas long as the amount taken plus a fee is returned.\n@dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\ninto consideration. For further details please visit https://docs.aave.com/developers/\n@param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanReceiver interface\n@param assets The addresses of the assets being flash-borrowed\n@param amounts The amounts of the assets being flash-borrowed\n@param interestRateModes Types of the debt to open if the flash loan is not returned:\n  0 -> Don't open any debt, just revert if funds can't be transferred from the receiver\n  1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\n  2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\n@param onBehalfOf The address  that will receive the debt in the case of using on `modes` 1 or 2\n@param params Variadic packed params to pass to the receiver as extra information\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+              "functionSelector": "ab9c4b5d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "flashLoan",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "receiverAddress",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2053,
+                        "name": "ElementaryTypeName",
+                        "src": "9192:7:8"
+                      }
+                    ],
+                    "id": 2054,
+                    "name": "VariableDeclaration",
+                    "src": "9192:23:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "assets",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 2055,
+                            "name": "ElementaryTypeName",
+                            "src": "9222:7:8"
+                          }
+                        ],
+                        "id": 2056,
+                        "name": "ArrayTypeName",
+                        "src": "9222:9:8"
+                      }
+                    ],
+                    "id": 2057,
+                    "name": "VariableDeclaration",
+                    "src": "9222:25:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amounts",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2058,
+                            "name": "ElementaryTypeName",
+                            "src": "9254:7:8"
+                          }
+                        ],
+                        "id": 2059,
+                        "name": "ArrayTypeName",
+                        "src": "9254:9:8"
+                      }
+                    ],
+                    "id": 2060,
+                    "name": "VariableDeclaration",
+                    "src": "9254:26:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "interestRateModes",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2061,
+                            "name": "ElementaryTypeName",
+                            "src": "9287:7:8"
+                          }
+                        ],
+                        "id": 2062,
+                        "name": "ArrayTypeName",
+                        "src": "9287:9:8"
+                      }
+                    ],
+                    "id": 2063,
+                    "name": "VariableDeclaration",
+                    "src": "9287:36:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "onBehalfOf",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2064,
+                        "name": "ElementaryTypeName",
+                        "src": "9330:7:8"
+                      }
+                    ],
+                    "id": 2065,
+                    "name": "VariableDeclaration",
+                    "src": "9330:18:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "params",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 2066,
+                        "name": "ElementaryTypeName",
+                        "src": "9355:5:8"
+                      }
+                    ],
+                    "id": 2067,
+                    "name": "VariableDeclaration",
+                    "src": "9355:21:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "referralCode",
+                      "overrides": null,
+                      "scope": 2072,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 2068,
+                        "name": "ElementaryTypeName",
+                        "src": "9383:6:8"
+                      }
+                    ],
+                    "id": 2069,
+                    "name": "VariableDeclaration",
+                    "src": "9383:19:8"
+                  }
+                ],
+                "id": 2070,
+                "name": "ParameterList",
+                "src": "9185:222:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2071,
+                "name": "ParameterList",
+                "src": "9416:0:8"
+              }
+            ],
+            "id": 2072,
+            "name": "FunctionDefinition",
+            "src": "9167:250:8"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Allows smartcontracts to access the liquidity of the pool within one transaction,\nas long as the amount taken plus a fee is returned.\n@dev IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept\ninto consideration. For further details please visit https://docs.aave.com/developers/\n@param receiverAddress The address of the contract receiving the funds, implementing IFlashLoanSimpleReceiver interface\n@param asset The address of the asset being flash-borrowed\n@param amount The amount of the asset being flash-borrowed\n@param params Variadic packed params to pass to the receiver as extra information\n@param referralCode The code used to register the integrator originating the operation, for potential rewards.\n  0 if the action is executed directly by the user, without any middle-man",
+              "functionSelector": "42b0b77c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "flashLoanSimple",
+              "overrides": null,
+              "scope": 2086,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "receiverAddress",
+                      "overrides": null,
+                      "scope": 2085,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2073,
+                        "name": "ElementaryTypeName",
+                        "src": "10371:7:8"
+                      }
+                    ],
+                    "id": 2074,
+                    "name": "VariableDeclaration",
+                    "src": "10371:23:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "asset",
+                      "overrides": null,
+                      "scope": 2085,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2075,
+                        "name": "ElementaryTypeName",
+                        "src": "10401:7:8"
+                      }
+                    ],
+                    "id": 2076,
+                    "name": "VariableDeclaration",
+                    "src": "10401:13:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2085,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2077,
+                        "name": "ElementaryTypeName",
+                        "src": "10421:7:8"
+                      }
+                    ],
+                    "id": 2078,
+                    "name": "VariableDeclaration",
+                    "src": "10421:14:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "params",
+                      "overrides": null,
+                      "scope": 2085,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 2079,
+                        "name": "ElementaryTypeName",
+                        "src": "10442:5:8"
+                      }
+                    ],
+                    "id": 2080,
+                    "name": "VariableDeclaration",
+                    "src": "10442:21:8"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "referralCode",
+                      "overrides": null,
+                      "scope": 2085,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 2081,
+                        "name": "ElementaryTypeName",
+                        "src": "10470:6:8"
+                      }
+                    ],
+                    "id": 2082,
+                    "name": "VariableDeclaration",
+                    "src": "10470:19:8"
+                  }
+                ],
+                "id": 2083,
+                "name": "ParameterList",
+                "src": "10364:130:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2084,
+                "name": "ParameterList",
+                "src": "10503:0:8"
+              }
+            ],
+            "id": 2085,
+            "name": "FunctionDefinition",
+            "src": "10340:164:8"
+          }
+        ],
+        "id": 2086,
+        "name": "ContractDefinition",
+        "src": "167:10342:8"
+      }
+    ],
+    "id": 2087,
+    "name": "SourceUnit",
+    "src": "38:10473:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-02-17T18:15:30.434Z",
+  "devdoc": {
+    "author": "Aave",
+    "methods": {
+      "borrow(address,uint256,uint256,uint16,address)": {
+        "params": {
+          "amount": "The amount to be borrowed",
+          "asset": "The address of the underlying asset to borrow",
+          "interestRateMode": "The interest rate mode at which the user wants to borrow: 1 for Stable, 2 for Variable",
+          "onBehalfOf": "The address of the user who will receive the debt. Should be the address of the borrower itself calling the function if he wants to borrow against his own collateral, or the address of the credit delegator if he has been given credit delegation allowance",
+          "referralCode": "The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man"
+        }
+      },
+      "flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)": {
+        "details": "IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept into consideration. For further details please visit https://docs.aave.com/developers/",
+        "params": {
+          "amounts": "The amounts of the assets being flash-borrowed",
+          "assets": "The addresses of the assets being flash-borrowed",
+          "interestRateModes": "Types of the debt to open if the flash loan is not returned:  0 -> Don't open any debt, just revert if funds can't be transferred from the receiver  1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address  2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address",
+          "onBehalfOf": "The address  that will receive the debt in the case of using on `modes` 1 or 2",
+          "params": "Variadic packed params to pass to the receiver as extra information",
+          "receiverAddress": "The address of the contract receiving the funds, implementing IFlashLoanReceiver interface",
+          "referralCode": "The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man"
+        }
+      },
+      "flashLoanSimple(address,address,uint256,bytes,uint16)": {
+        "details": "IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept into consideration. For further details please visit https://docs.aave.com/developers/",
+        "params": {
+          "amount": "The amount of the asset being flash-borrowed",
+          "asset": "The address of the asset being flash-borrowed",
+          "params": "Variadic packed params to pass to the receiver as extra information",
+          "receiverAddress": "The address of the contract receiving the funds, implementing IFlashLoanSimpleReceiver interface",
+          "referralCode": "The code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man"
+        }
+      },
+      "repay(address,uint256,uint256,address)": {
+        "params": {
+          "amount": "The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`",
+          "asset": "The address of the borrowed underlying asset previously borrowed",
+          "interestRateMode": "The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable",
+          "onBehalfOf": "The address of the user who will get his debt reduced/removed. Should be the address of the user calling the function if he wants to reduce/remove his own debt, or the address of any other other borrower whose debt should be removed"
+        },
+        "returns": {
+          "_0": "The final amount repaid"
+        }
+      },
+      "repayWithATokens(address,uint256,uint256)": {
+        "details": "Passing uint256.max as amount will clean up any residual aToken dust balance, if the user aToken balance is not enough to cover the whole debt",
+        "params": {
+          "amount": "The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`",
+          "asset": "The address of the borrowed underlying asset previously borrowed",
+          "interestRateMode": "The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable"
+        },
+        "returns": {
+          "_0": "The final amount repaid"
+        }
+      },
+      "repayWithPermit(address,uint256,uint256,address,uint256,uint8,bytes32,bytes32)": {
+        "params": {
+          "amount": "The amount to repay - Send the value type(uint256).max in order to repay the whole debt for `asset` on the specific `debtMode`",
+          "asset": "The address of the borrowed underlying asset previously borrowed",
+          "deadline": "The deadline timestamp that the permit is valid",
+          "interestRateMode": "The interest rate mode at of the debt the user wants to repay: 1 for Stable, 2 for Variable",
+          "onBehalfOf": "Address of the user who will get his debt reduced/removed. Should be the address of the user calling the function if he wants to reduce/remove his own debt, or the address of any other other borrower whose debt should be removed",
+          "permitR": "The R parameter of ERC712 permit sig",
+          "permitS": "The S parameter of ERC712 permit sig",
+          "permitV": "The V parameter of ERC712 permit sig"
+        },
+        "returns": {
+          "_0": "The final amount repaid"
+        }
+      },
+      "supply(address,uint256,address,uint16)": {
+        "params": {
+          "amount": "The amount to be supplied",
+          "asset": "The address of the underlying asset to supply",
+          "onBehalfOf": "The address that will receive the aTokens, same as msg.sender if the user  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens  is a different wallet",
+          "referralCode": "Code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man"
+        }
+      },
+      "supplyWithPermit(address,uint256,address,uint16,uint256,uint8,bytes32,bytes32)": {
+        "params": {
+          "amount": "The amount to be supplied",
+          "asset": "The address of the underlying asset to supply",
+          "deadline": "The deadline timestamp that the permit is valid",
+          "onBehalfOf": "The address that will receive the aTokens, same as msg.sender if the user  wants to receive them on his own wallet, or a different address if the beneficiary of aTokens  is a different wallet",
+          "permitR": "The R parameter of ERC712 permit sig",
+          "permitS": "The S parameter of ERC712 permit sig",
+          "permitV": "The V parameter of ERC712 permit sig",
+          "referralCode": "Code used to register the integrator originating the operation, for potential rewards.  0 if the action is executed directly by the user, without any middle-man"
+        }
+      },
+      "withdraw(address,uint256,address)": {
+        "params": {
+          "amount": "The underlying amount to be withdrawn  - Send the value type(uint256).max in order to withdraw the whole aToken balance",
+          "asset": "The address of the underlying asset to withdraw",
+          "to": "The address that will receive the underlying, same as msg.sender if the user  wants to receive it on his own wallet, or a different address if the beneficiary is a  different wallet"
+        },
+        "returns": {
+          "_0": "The final amount withdrawn"
+        }
+      }
+    },
+    "title": "IPool"
+  },
+  "userdoc": {
+    "methods": {
+      "borrow(address,uint256,uint256,uint16,address)": {
+        "notice": "Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower already supplied enough collateral, or he was given enough allowance by a credit delegator on the corresponding debt token (StableDebtToken or VariableDebtToken) - E.g. User borrows 100 USDC passing as `onBehalfOf` his own address, receiving the 100 USDC in his wallet  and 100 stable/variable debt tokens, depending on the `interestRateMode`"
+      },
+      "flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)": {
+        "notice": "Allows smartcontracts to access the liquidity of the pool within one transaction, as long as the amount taken plus a fee is returned."
+      },
+      "flashLoanSimple(address,address,uint256,bytes,uint16)": {
+        "notice": "Allows smartcontracts to access the liquidity of the pool within one transaction, as long as the amount taken plus a fee is returned."
+      },
+      "repay(address,uint256,uint256,address)": {
+        "notice": "Repays a borrowed `amount` on a specific reserve, burning the equivalent debt tokens owned - E.g. User repays 100 USDC, burning 100 variable/stable debt tokens of the `onBehalfOf` address"
+      },
+      "repayWithATokens(address,uint256,uint256)": {
+        "notice": "Repays a borrowed `amount` on a specific reserve using the reserve aTokens, burning the equivalent debt tokens - E.g. User repays 100 USDC using 100 aUSDC, burning 100 variable/stable debt tokens"
+      },
+      "repayWithPermit(address,uint256,uint256,address,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Repay with transfer approval of asset to be repaid done via permit function see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713"
+      },
+      "supply(address,uint256,address,uint16)": {
+        "notice": "Supplies an `amount` of underlying asset into the reserve, receiving in return overlying aTokens. - E.g. User supplies 100 USDC and gets in return 100 aUSDC"
+      },
+      "supplyWithPermit(address,uint256,address,uint16,uint256,uint8,bytes32,bytes32)": {
+        "notice": "Supply with transfer approval of asset to be supplied done via permit function see: https://eips.ethereum.org/EIPS/eip-2612 and https://eips.ethereum.org/EIPS/eip-713"
+      },
+      "withdraw(address,uint256,address)": {
+        "notice": "Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned E.g. User has 100 aUSDC, calls withdraw() and receives 100 USDC, burning the 100 aUSDC"
+      }
+    },
+    "notice": "Defines the basic interface for an Aave Pool."
+  }
+}
